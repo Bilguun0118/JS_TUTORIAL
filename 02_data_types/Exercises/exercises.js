@@ -68,3 +68,14 @@ console.log(day.startsWith("30"));
 
 //22. 30 Days Of JavaScript мөртэй endsWith() аргыг ашиглаад үр дүнг үнэн болго
 console.log(day.endsWith("Javascript"));
+
+//23. JavaScript-н 30 хоногийн бүх a-г олохын тулд match() аргыг ашиглана уу
+let alla = /\a+/g
+console.log(day.match(alla));
+
+//24. concat() ашиглаад '30 Days of' болон 'JavaScript'-г '30 Days Of JavaScript' гэсэн нэг мөр болгон нэгтгэнэ үү.
+let singleString = '30 Days of '
+console.log(singleString.concat("JavaScript the mongolia"));
+
+//25. 30 хоногийн JavaScript-г 2 удаа хэвлэхийн тулд repeat() аргыг ашиглаарай
+console.log(day.repeat(2));
