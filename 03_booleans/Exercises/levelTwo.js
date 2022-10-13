@@ -62,4 +62,65 @@ let myAge = 250
 let yourAge = 25
 
 console.log(`I am ${myAge} years older than you.`);
-//13. 
+
+//13. Хэрэглэгчийн төрсөн оныг авах, хэрэв хэрэглэгч 18 ба түүнээс дээш настай бол тодорхой жил хүлээхийг хэлээгүй бол жолоодохыг зөвшөөрнө үү.
+let bobYear = 1995
+let johnYear = 2005
+
+// Enter birth year: 1995
+// You are 25. You are old enough to drive
+
+// Enter birth year: 2005
+// You are 15. You will be allowed to drive after 3 years.
+
+
+let numbers = 2022 - bobYear;
+numbers > 18
+  ? console.log(`You are ${numbers}. You are old enough to drive`)
+  : console.log(`${numbers}. You will be allowed to drive after ${18 - numbers} years.`)
+numbers = 2022 - johnYear
+
+numbers > 18
+? console.log(`You are ${numbers}. You are old enough to drive`)
+: console.log(`${numbers}. You will be allowed to drive after ${18 - numbers} years.`)
+
+//14. Хэрэглэгчээс жилийн тоог оруулахыг хүссэн скрипт бичнэ үү. Хүн хэдэн секунд амьдрах боломжтойг тооцоол. Зарим нэг нь зуун жил амьдардаг гэж бодъё
+let allSec = prompt("nasaa oruulna uu?", "number" )
+let sec = allSec * 31536000
+console.log(sec);
+
+//15. Date time объектыг ашиглан хүн унших боломжтой цагийн форматыг үүсгэ
+const now = new Date()
+const year = now.getFullYear()
+const month = now.getMonth()
+const day = now.getDate()
+const hour = now.getHours()
+const min = now.getMinutes()
+
+
+console.log(`${year}-${month}-${day} ${hour}:${min}`);
+console.log(`${day}-${month}-${year} ${hour}:${min}`);
+
+// YYYY-MM-DD HH:mm
+// DD-MM-YYYY HH:mm
+// DD/MM/YYYY HH:mm
+
+//level-3  1.Date time объектыг ашиглан хүн унших боломжтой цагийн форматыг үүсгэ. Цаг, минут нь хоёр оронтой байх ёстой (7 цаг 07, 5 минут нь 05 байх ёстой)
+if(hour < 10){
+    hour = "0"+hour
+}
+if(min < 10) {
+    min = "0"+ min
+};
+if(sec < 10){
+    sec = "0"+sec
+}
+console.log(`${year}-${month}-${day} ${hour}:${min}`);
+console.log(`${day}-${month}-${year} ${hour}:${min}`);
+
+
+
+// if (hours   < 10) {hours   = "0"+hours;}
+//     if (minutes < 10) {minutes = "0"+minutes;}
+//     if (seconds < 10) {seconds = "0"+seconds;}
+//     return hours+':'+minutes+':'+seconds;

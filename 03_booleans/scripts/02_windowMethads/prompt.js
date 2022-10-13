@@ -1,2 +1,2 @@
-let number = prompt("hello world", 'hello earth');
-console.log(number);
+let numb = prompt("hello world", 'hello earth');
+console.log(numb);
