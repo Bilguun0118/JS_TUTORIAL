@@ -1,11 +1,11 @@
 //1. console.log() ашиглан дараах мэдэгдлийг хэвлэнэ үү:
 console.log(
-  `The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by bilguun studing us to help one another.`
+    `The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by bilguun studing us to help one another.`
 );
 
 //2. Console.log() ашиглан Тереза ​​эхийн хэлсэн дараах ишлэлийг хэвлэж гарга.
 console.log(
-  `"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."`
+    `"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."`
 );
 
 //3.Typeof '10' нь 10-тай яг тэнцүү эсэхийг шалгаарай. Хэрэв үгүй ​​бол яг тэнцүү болго.
@@ -24,19 +24,19 @@ console.log("Өгүүлбэрт on үг байгаа эсэхийг шалган
 //6. Энэ хичээл нь үг хэллэгээр дүүрэн биш гэж найдаж байна. Өгүүлбэрт үг хэллэг байгаа эсэхийг шалгана уу.
 let stringSix = "I hope this course is not full of jargon";
 console.log(
-  "Өгүүлбэрт  jargon үг байгаа эсэхийг шалгана = ",
-  stringSix.endsWith("jargon")
+    "Өгүүлбэрт  jargon үг байгаа эсэхийг шалгана = ",
+    stringSix.endsWith("jargon")
 );
 
 //7. 0-ээс 100 хүртэл санамсаргүй тоог үүсгэнэ үү.
 let number = 100;
 console.log("random number = ", Math.floor(Math.random() * 100));
 
-//8. 0-ээс 255 хүртэлх санамсаргүй тоог үүсгэнэ үү.
+//8. 50-ээс 255 хүртэлх санамсаргүй тоог үүсгэнэ үү.
 console.log("50-aas  random number = ", Math.floor(Math.random() * 100) + 50);
 
 //9.0-ээс 255 хүртэлх санамсаргүй тоог үүсгэнэ үү.
-console.log("50-aas  random number = ", Math.floor(Math.random() * 250));
+console.log("0-aas  random number = ", Math.floor(Math.random() * 250));
 
 //10. Санамсаргүй тоо ашиглан 'JavaScript' тэмдэгтүүдэд хандана уу.
 let stringJS = "JavaScript";
@@ -53,4 +53,3 @@ console.log(`\t1 1 1 1 1 \n
 //(Учир нь дараах өгүүлбэрээс "Та өгүүлбэрийг учир нь учир нь холбоосоор төгсгөж болохгүй" гэсэн өгүүлбэрийг таслахын тулд substr-г ашиглана.)
 let stringBecause = "You cannot end a sentence with because because because is a conjunction"
 console.log("because = ", stringBecause.substr(30, 8));
-
