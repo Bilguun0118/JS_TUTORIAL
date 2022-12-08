@@ -4,12 +4,12 @@ let base = 20
 
 sum = 0.5 * h * base
 console.log("гурвалжны талбай = ", sum);
-
+confirm("hello");
 //2. Хэрэглэгчээс гурвалжны а, b тал, в талыг оруулах, гурвалжны периметрийг тооцоолох (периметр = a + b + c) скрипт бичнэ үү.
 let a = 5
 let b = 4
 let c = 3
-perimeter= a + b + c
+perimeter = a + b + c
 console.log("талыг оруулах =", perimeter);
 
 //3. Мэдээллийг ашиглан урт, өргөнийг авч, тэгш өнцөгтийн талбайг тооцоол (талбай = урт x өргөн ба тэгш өнцөгтийн периметр (периметр = 2 x (урт + өргөн))
@@ -28,7 +28,7 @@ let y = 6
 let x = 10
 
 m = (y * 2 - y * 1) / (x * 2 - x * 1)
-console.log( "Naluu = ", m);
+console.log("Naluu = ", m);
 
 //7. Дээрх хоёр асуултын налууг харьцуул.
 
@@ -44,18 +44,18 @@ console.log("Your weekly earning is = ", YourWeeklyEarningIs);
 //11.Өөрийн нэрийн урт, овог нэрийнхээ уртыг харьцуулж үз, та энэ үр дүнг авах ёстой.
 let firstName = "Bilguun"
 let lastName = "Tumurbaatar"
-console.log("length = ", firstName.length , lastName.length);
+console.log("length = ", firstName.length, lastName.length);
 
 //10.Хэрэв таны нэр 7-оос их байвал таны нэр урт, харин богино гэж хэлээрэй.
 let number = lastName.length
-number > 7
-  ? console.log(`${number} is a long`)
-  : console.log(`${number} is a short`)
+number > 7 ?
+    console.log(`${number} is a long`) :
+    console.log(`${number} is a short`)
 number = firstName.length
 
-number > 7
-  ? console.log(`${number} is a long`)
-  : console.log(`${number} is a short`)
+number > 7 ?
+    console.log(`${number} is a long`) :
+    console.log(`${number} is a short`)
 
 //12. myAge болон yourAge гэсэн хоёр хувьсагчийг зарлаж, тэдгээрт анхны утгууд болон myAge болон yourAge онооно.
 let myAge = 250
@@ -75,17 +75,17 @@ let johnYear = 2005
 
 
 let numbers = 2022 - bobYear;
-numbers > 18
-  ? console.log(`You are ${numbers}. You are old enough to drive`)
-  : console.log(`${numbers}. You will be allowed to drive after ${18 - numbers} years.`)
+numbers > 18 ?
+    console.log(`You are ${numbers}. You are old enough to drive`) :
+    console.log(`${numbers}. You will be allowed to drive after ${18 - numbers} years.`)
 numbers = 2022 - johnYear
 
-numbers > 18
-? console.log(`You are ${numbers}. You are old enough to drive`)
-: console.log(`${numbers}. You will be allowed to drive after ${18 - numbers} years.`)
+numbers > 18 ?
+    console.log(`You are ${numbers}. You are old enough to drive`) :
+    console.log(`${numbers}. You will be allowed to drive after ${18 - numbers} years.`)
 
 //14. Хэрэглэгчээс жилийн тоог оруулахыг хүссэн скрипт бичнэ үү. Хүн хэдэн секунд амьдрах боломжтойг тооцоол. Зарим нэг нь зуун жил амьдардаг гэж бодъё
-let allSec = prompt("nasaa oruulna uu?", "number" )
+let allSec = prompt("nasaa oruulna uu?", "number")
 let sec = allSec * 31536000
 console.log(sec);
 
@@ -106,14 +106,14 @@ console.log(`${day}-${month}-${year} ${hour}:${min}`);
 // DD/MM/YYYY HH:mm
 
 //level-3  1.Date time объектыг ашиглан хүн унших боломжтой цагийн форматыг үүсгэ. Цаг, минут нь хоёр оронтой байх ёстой (7 цаг 07, 5 минут нь 05 байх ёстой)
-if(hour < 10){
-    hour = "0"+hour
+if (hour < 10) {
+    hour = "0" + hour
 }
-if(min < 10) {
-    min = "0"+ min
+if (min < 10) {
+    min = "0" + min
 };
-if(sec < 10){
-    sec = "0"+sec
+if (sec < 10) {
+    sec = "0" + sec
 }
 console.log(`${year}-${month}-${day} ${hour}:${min}`);
 console.log(`${day}-${month}-${year} ${hour}:${min}`);
